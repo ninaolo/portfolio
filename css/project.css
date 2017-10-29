@@ -1,0 +1,22 @@
+#main-img {
+    height: 500px;
+    margin: 30px;
+}
+
+.medium-img {
+    margin: 30px 0px 30px 0px;
+    height: 400px;
+    border: solid 2px #efefef;
+}
+
+a {
+    text-transform: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+h4 {
+    margin-top: 40px;
+}

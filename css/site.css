@@ -1,0 +1,163 @@
+
+html, body {
+    height: 100%; /* The html and body elements cannot have any padding or margin. */
+    text-align: center;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.top-pad {
+    padding-top: 80px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    color: #323232;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Quicksand", sans-serif;
+    color: #323232;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h4, a {
+    color: #323232;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.active, .error {
+    color: #DF9F39;
+}
+
+a:hover, #navbar a:hover {
+    color: #DF9F39;
+    text-decoration: none;
+}
+
+/*
+ * Buttons
+ */
+
+.btn {
+    padding: 14px 24px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    color: #DF9F39;
+    border: 1px solid #DF9F39;
+    background: transparent;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
+    background: transparent;
+    color: #323232;
+    border-color: #323232;
+}
+
+.btn-other {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    background-color: #1fb18a;
+    text-transform: lowercase;
+}
+
+.btn-other:hover, .btn-other:focus, .btn-other:active{
+    background-color: #1b9172;
+    color: white;
+}
+
+/*
+ * Main content
+ */
+
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+.list {
+    text-align: left;
+}
+
+.label {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 10px 5px 10px 5px;
+    background-color: #DF9F39;
+}
+
+/* This is used in the entire site to trigger a fade in effect. */
+.fade-in {
+    animation: fadein 0.5s linear;
+}
+
+.view-fade-in {
+    animation: fadein 0.5s linear;
+    padding-top: 100px;
+}
+
+.fade-delay {
+    animation-delay: 1s;
+}
+
+.fade-in-infinite {
+    animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOut {
+    from {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.2;
+    }
+}
